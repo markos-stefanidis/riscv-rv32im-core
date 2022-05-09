@@ -2,11 +2,11 @@
 ## About
 This is my first big SystemVerilog project I did as a school asignment back in 2019. It is a System Verilog implementation of the RV32-IM instruction set.
 This implementation features a classic 5-stage pipelined core with the following stages:
-	* Instruction Fetch Stage
-	* Instruction Decode Stage
-	* Execution Stage
-	* Memory Stage
-	* Write Back Stage
+	- Instruction Fetch Stage
+	- Instruction Decode Stage
+	- Execution Stage
+	- Memory Stage
+	- Write Back Stage
 
 The implementation has been simulated using Modelsim, but has not been implemented on actual hardware.
 
