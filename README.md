@@ -12,9 +12,12 @@ The implementation has been simulated using Modelsim, but has not been implement
 
 ## Compiling
 C source code can be compiled using the [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain) using the following command:
+
 `riscv32-unknown-elf-gcc -march=rv32im -mabi=ilp32 -O0 -nostdlib test.c -o test.o`
 
 After that, the actual machine code and assembly can be outputed through the command:
+
 `riscv32-unknown-elf-objdump -dr test.o`
+
 
 The **compile** bash script will run these two commands and save the actual machine code as instructions.mem. Then the testbench will read this file into the Instruction Memory. Be careful with the Instruction Addresses though, as the compiler may default to an arbitrary starting address.
