@@ -1,0 +1,2 @@
+riscv32-unknown-elf-gcc -march=rv32im -mabi=ilp32 -O0 -nostdlib $1 -o bootstrap.o
+riscv32-unknown-elf-objdump -dr bootstrap.o | awk 'NR>7' | awk {'print $2'} > instructions.mem
