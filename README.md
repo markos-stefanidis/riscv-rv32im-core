@@ -8,7 +8,9 @@ This implementation features a classic 5-stage pipelined core with the following
 - Memory Stage
 - Write Back Stage
 
-The implementation has been simulated using Modelsim, but has not been implemented on actual hardware.
+It also features a Forwarding Unit and a Hazard Detection Unit.
+
+This implementation has been simulated using Modelsim, but has not been implemented on actual hardware.
 
 ## Compiling
 C source code can be compiled using the [riscv-gnu-toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain) with the following command:
